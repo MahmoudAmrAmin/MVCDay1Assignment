@@ -1,0 +1,11 @@
+﻿@model Products
+
+<table class="table table-bordered table-hover">
+    <tr>
+        <td>@Model.Id</td>
+        <td>@Model.Price</td>
+        <td>@Model.Description</td> 
+        <td><img src="/Images/@Model.ImageUrl" alt="Alternate Text" width="150px"/></td>
+        <td><a href="/Products/ShowAllProducts">Go to home page</a></td>
+    </tr>
+</table>

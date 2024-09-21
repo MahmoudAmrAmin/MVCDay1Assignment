@@ -1,0 +1,18 @@
+﻿@model List<Products>
+<table class="table table-bordered table-hover">
+    @foreach(var item in Model){
+        <tr>
+       
+               <td>@item.Id</td>
+               <td>@item.Name</td>
+               <td>@item.Price</td>
+               <td>@item.Description</td>
+               <td><img src="/Images/@item.ImageUrl" width="150px" /></td>
+            <td><a href="/Products/GetProductDetails?id=@item.Id">show detalis</a></td>
+        </tr>
+    }
+
+</table>
+
+
+
